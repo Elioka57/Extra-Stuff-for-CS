@@ -1,0 +1,29 @@
+// Week 3: Animal Boarding Validator
+// Validate animal boarding requests using control structures
+
+Console.WriteLine("=== Animal Boarding System ===");
+Console.WriteLine("Animal Name?");
+string animalName = Console.ReadLine();
+Console.WriteLine("Thank you");
+Console.WriteLine("Animal Size (Small, Medium, or Large)");
+string animalSize = Console.ReadLine();
+Console.WriteLine("Is this animal a carnivore? (yes/no)");
+string answer = Console.ReadLine();
+
+bool carnivore;
+
+if (answer == "yes")
+{
+  carnivore = true;
+}
+
+else if (answer == "no")
+{
+  carnivore = false;
+}
+else 
+{
+    Console.WriteLine("Invalid!");
+}
+Console.WriteLine("Number Boarding?");
+int numberBoarding = Console.ReadLine();
